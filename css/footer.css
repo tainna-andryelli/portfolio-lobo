@@ -19,6 +19,7 @@
 
 .footer .container {
   padding-top: 100px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .footer__paragrafo {
@@ -43,13 +44,15 @@
 }
 
 .footer__copy {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   color: var(--cinza-7);
+  grid-column: 1/-1;
 }
 
 @media (max-width: 800px) {
   .footer .container {
     padding-top: 80px;
+    grid-template-columns: 1fr;
   }
 
   .footer__paragrafo,
