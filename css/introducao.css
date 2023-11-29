@@ -1,0 +1,79 @@
+.introducao {
+  align-items: center;
+}
+
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125; /*valor puro multiplica o font-size*/
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/*Adicionando o detalhe utilizando position absolute*/
+.introducao h1::before {
+  content: "";
+  display: block;
+  background: url("../img/detalhe.svg") no-repeat center;
+  width: 130px;
+  height: 100px;
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  z-index: -1;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: var(--cinza-10);
+}
+
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .introducao .img {
+    max-width: 300px;
+    place-self: center;
+  }
+
+  .introducao__descricao {
+    margin: 0 auto;
+  }
+
+  .introducao h1 p {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .introducao h1::before {
+    width: 40px;
+    height: 10px;
+    left: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao {
+    padding: 20px;
+  }
+
+  .introducao img {
+    max-width: 250px;
+  }
+
+  .introducao h1 {
+    font-size: 2.75rem;
+  }
+
+  .introducao p {
+    font-size: 1rem;
+  }
+}
