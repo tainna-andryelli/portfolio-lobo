@@ -64,21 +64,6 @@
   .footer::before {
     display: none;
   }
-
-  /*.footer__paragrafo {
-    position: relative;
-  }
-
-  .footer__paragrafo::before {
-    content: "";
-    display: block;
-    width: 5px;
-    height: 60px;
-    position: absolute;
-    background: linear-gradient(var(--verde-claro), var(--verde-escuro));
-    left: -10px;
-    top: -5px;
-  } */
 }
 
 @media (max-width: 500px) {
