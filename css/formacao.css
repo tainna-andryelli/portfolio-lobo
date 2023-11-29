@@ -1,0 +1,126 @@
+.formacao {
+  background-color: var(--cinza-13);
+  color: var(--cinza-6);
+}
+
+.formacao .subtitulo {
+  color: var(--preto);
+  max-width: 5ch;
+}
+
+.formacao__paragrafo {
+  max-width: 45ch;
+  margin-bottom: 60px;
+  font-size: 1.5rem;
+}
+
+.formacao__paragrafo strong {
+  color: var(--branco);
+}
+
+.faculdade__lista {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.faculdade {
+  padding: 20px;
+  background-color: var(--preto);
+  border-radius: 4px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.faculdade__tipo {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.faculdade__curso {
+  flex: 1;
+  margin-bottom: 40px;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  position: relative;
+}
+
+.faculdade__curso::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 20px;
+  position: absolute;
+  background: linear-gradient(var(--verde-claro), var(--verde-escuro));
+  left: -25px;
+  top: 3px;
+}
+
+.faculdade__instituicao {
+  font-size: 1.125rem;
+}
+
+.cursos {
+  margin-bottom: 60px;
+}
+
+.formacao__extra h3 {
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin-bottom: 4%;
+  color: var(--cinza-7);
+  position: relative;
+}
+
+.formacao__extra h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url("../img/cursos.svg") no-repeat center center;
+  left: -50px;
+  top: -5px;
+}
+
+.formacao__extra .idiomas h3::before {
+  background: url("../img/idiomas.svg");
+}
+
+.formacao__extra li {
+  color: var(--branco);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.idiomas li {
+  justify-content: flex-start;
+}
+
+.formacao__extra li span {
+  color: var(--cinza-7);
+}
+
+@media (max-width: 800px) {
+  /* .formacao .subtitulo {
+    max-width: initial;
+  } */
+
+  .formacao__paragrafo {
+    font-size: 1.125rem;
+  }
+
+  .formacao__extra h3::before {
+    position: initial;
+    margin-bottom: 20px;
+  }
+}

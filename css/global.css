@@ -16,6 +16,7 @@ body {
   --cinza-1: #f5f5f5;
   --cinza-2: #f0f0f0;
   --cinza-3: #e0e0e0;
+  --cinza-4: #cccccc;
   --cinza-6: #a3a3a3;
   --cinza-7: #8f8f8f;
   --cinza-10: #525252;
@@ -57,7 +58,7 @@ a {
 
 @media (max-width: 1000px) {
   .container {
-    gap: 60px;
+    gap: 40px;
   }
   .subtitulo {
     font-size: 6rem;
@@ -65,9 +66,13 @@ a {
 }
 
 @media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
   .subtitulo {
     font-size: 3rem;
     text-transform: capitalize;
-    max-width: initial;
+    max-width: initial !important;
   }
 }
