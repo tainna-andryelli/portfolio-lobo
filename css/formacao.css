@@ -111,9 +111,9 @@
 }
 
 @media (max-width: 800px) {
-  /* .formacao .subtitulo {
-    max-width: initial;
-  } */
+  .formacao .subtitulo {
+    color: var(--cinza-10);
+  }
 
   .formacao__paragrafo {
     font-size: 1.125rem;
