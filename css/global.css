@@ -32,6 +32,7 @@ ul {
 
 img {
   max-width: 100%; /*não deixa a imagem crescer infinitamente*/
+  height: auto; /*como foi definida altura, heigth com valor auto impede a imagem de ficar distorcida e ela segue proporção do width*/
   display: block;
 }
 
